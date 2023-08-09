@@ -1,19 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit Brust</title>
-</head>
-<body>
-    <header>
+    <!-- google font lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/fadf93f6ba.js" crossorigin="anonymous"></script>
 
+    <!--  tailwind and daisy ui cdn-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- tailwind custom classes -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                'btn-orange': '#F85559',
+              }
+            }
+          }
+        }
+      </script>
+      <!--  -->
+    <style>
+     .font-lato{
+        font-family: 'Lato', sans-serif;
+     }
+    </style>
+</head>
+
+<body class="font-lato">
+    <header>
+        <!-- navbar -->
+        <nav>
+            <div class="navbar  bg-[#F85559] rounded-lg">
+                <div class="navbar-start">
+                    <div>
+                        <ul class="flex gap-7 mt-3 z-[1] p-2  text-white text-xl">
+                            <li><a>Home</a></li>
+                            <li><a>About Us</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>All Fruits</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="navbar-center">
+                    <img src="images/logo.png" alt="">
+                    <a class="btn btn-ghost normal-case text-4xl text-white">Fruit Burst</a>
+                </div>
+
+                <div class="navbar-end flex ">
+                    <div class="form-control w-72 opacity-4">
+                        <input type="text" placeholder="Search here" class="input input-bordered w-24 md:w-auto text-base" />
+                    </div>
+                    <div class="-ml-4">
+                        <i class="fa-solid fa-magnifying-glass "></i>
+
+                    </div>
+
+                </div>
+            </div>
+        </nav>
     </header>
     <main>
 
     </main>
     <footer>
-        
+
     </footer>
 </body>
+
 </html>
