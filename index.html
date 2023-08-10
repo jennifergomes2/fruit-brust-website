@@ -2,111 +2,151 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fruit Brust</title>
-    <!-- google font lato -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-    <!-- font awesome -->
-    <script src="https://kit.fontawesome.com/fadf93f6ba.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fruit Brust</title>
+  <!-- google font lato -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/fadf93f6ba.js" crossorigin="anonymous"></script>
 
-    <!--  tailwind and daisy ui cdn-->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- tailwind custom classes -->
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                'btn-orange': '#F85559',
-              }
-            }
+  <!--  tailwind and daisy ui cdn-->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- tailwind custom classes -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'orange': '#F85559',
+            'black': '#121212',
           }
         }
-      </script>
-      <!--  -->
-    <style>
-     .font-lato{
-        font-family: 'Lato', sans-serif;
-     }
-    </style>
+      }
+    }
+  </script>
+  <!--  -->
+  <style>
+    .font-lato {
+      font-family: 'Lato', sans-serif;
+    }
+  </style>
 </head>
 
 <body class="font-lato">
-    <header class="md:container md:mx-auto">
-        <!-- navbar -->
-        <nav class=" pt-7">
-            <div class="navbar  bg-[#F85559] rounded-full ">
-                <div class="navbar-start text-center ">
-                    <div>
-                        <ul class="flex gap-7 mt-1 z-[1] p-4 pl-9 text-white text-xl">
-                            <li><a>Home</a></li>
-                            <li><a>About Us</a></li>
-                            <li><a>Shop</a></li>
-                            <li><a>All Fruits</a></li>
+  <header class="md:container md:mx-auto">
+    <!-- navbar -->
+    <nav class=" pt-7">
+      <div class="navbar  bg-[#F85559] rounded-full ">
+        <div class="navbar-start text-center ">
+          <div>
+            <ul class="flex gap-7 mt-1 z-[1] p-4 pl-9 text-white text-xl">
+              <li><a>Home</a></li>
+              <li><a>About Us</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruits</a></li>
 
-                        </ul>
-                    </div>
-                </div>
-                <div class="navbar-center">
-                    <img src="images/logo.png" alt="">
-                    <h2 class="text-4xl text-white pt-4 pb-4">Fruit Burst</h2>
-                </div>
+            </ul>
+          </div>
+        </div>
+        <div class="navbar-center">
+          <img src="images/logo.png" alt="">
+          <h2 class="text-4xl text-white pt-4 pb-4">Fruit Burst</h2>
+        </div>
 
-                <div class="navbar-end flex">
-                    <div class="form-control w-72 opacity-4 pr-9">
-                        <input type="text" placeholder="Search here" class="input input-bordered w-20 md:w-auto text-base rounded-full " />
-                    
-                    </div>
-                    <div >
-                        <i class="fa-solid fa-magnifying-glass -ml-16 "></i>
-                    </div>
+        <div class="navbar-end flex">
+          <div class="form-control w-72 opacity-4 pr-9">
+            <input type="text" placeholder="Search here"
+              class="input input-bordered w-20 md:w-auto text-base rounded-full " />
 
-                </div>
-            </div>
-        </nav>
-        <!-- slider or carousel -->
-        <div class="carousel w-[90%] h-[500px] mt-9 ml-16 ">
-            <div id="slide1" class="carousel-item relative w-full">
-                <img src="/images/banner1.png" class="w-full" />
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide4" class="btn btn-circle">❮</a> 
-                <a href="#slide2" class="btn btn-circle">❯</a>
-              </div>
-            </div> 
-            <div id="slide2" class="carousel-item relative w-full">
-              <img src="/images/banner2.png" class="w-full" />
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide1" class="btn btn-circle">❮</a> 
-                <a href="#slide3" class="btn btn-circle">❯</a>
-              </div>
-            </div> 
-            <div id="slide3" class="carousel-item relative w-full">
-              <img src="/images/banner3.png" class="w-full" />
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide2" class="btn btn-circle">❮</a> 
-                <a href="#slide4" class="btn btn-circle">❯</a>
-              </div>
-            </div> 
-            <div id="slide4" class="carousel-item relative w-full">
-              <img src="/images/banner4.png" class="w-full" />
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide3" class="btn btn-circle">❮</a> 
-                <a href="#slide1" class="btn btn-circle">❯</a>
-              </div>
+          </div>
+          <div>
+            <i class="fa-solid fa-magnifying-glass -ml-16 "></i>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+
+    <!-- slider or carousel -->
+    <div class="carousel w-[95%] mt-10 ml-8">
+      <!-- slide 1 -->
+      <div id="slide1" class="carousel-item relative w-full">
+        <img src="/images/banner1.png" class="w-full" />
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide4" class="btn btn-circle">❮</a>
+          <div class="hero-overlay bg-opacity-60"></div>
+          <div class="hero-content">
+            <div class="max-w-md ml-[-1050px] text-center">
+              <h1 class="mb-5 text-5xl font-extrabold text-white">Exotic tastes at your doorstep</h1>
+              <p class="mb-5 text-white text-base font-semibold">We supply highly quality organic products</p>
+              <button class="btn bg-orange border-0 text-white ">Shop Now</button>
             </div>
           </div>
-    </header>
-    <main class="md:container md:mx-auto">
+          <a href="#slide2" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+<!-- slide 2 -->
+      <div id="slide2" class="carousel-item relative w-full">
+        <img src="/images/banner2.png" class="w-full" />
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide1" class="btn btn-circle">❮</a>
+          <div class="hero-overlay bg-opacity-60"></div>
+          <div class="hero-content">
+            <div class="max-w-md ml-[-1050px] text-center">
+              <h1 class="mb-5 text-5xl font-extrabold text-white">Exotic tastes at your doorstep</h1>
+              <p class="mb-5 text-white text-base font-semibold">We supply highly quality organic products</p>
+              <button class="btn bg-orange border-0 text-white ">Shop Now</button>
+            </div>
+          </div>
+          <a href="#slide3" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <!-- slide 3 -->
+      <div id="slide3" class="carousel-item relative w-full">
+        <img src="/images/banner3.png" class="w-full" />
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide2" class="btn btn-circle">❮</a>
+          <div class="hero-overlay bg-opacity-60"></div>
+          <div class="hero-content">
+            <div class="max-w-md ml-[-1050px] text-center">
+              <h1 class="mb-5 text-5xl font-extrabold text-white">Exotic tastes at your doorstep</h1>
+              <p class="mb-5 text-white text-base font-semibold">We supply highly quality organic products</p>
+              <button class="btn bg-orange border-0 text-white ">Shop Now</button>
+            </div>
+          </div>
+          <a href="#slide4" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <!-- slide 4 -->
+      <div id="slide4" class="carousel-item relative w-full">
+        <img src="/images/banner4.png" class="w-full" />
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide3" class="btn btn-circle">❮</a>
+          <div class="hero-overlay bg-opacity-60"></div>
+          <div class="hero-content">
+            <div class="max-w-md ml-[-1050px] text-center">
+              <h1 class="mb-5 text-5xl font-extrabold text-white">Exotic tastes at your doorstep</h1>
+              <p class="mb-5 text-white text-base font-semibold">We supply highly quality organic products</p>
+              <button class="btn bg-orange border-0 text-white ">Shop Now</button>
+            </div>
+          </div>
+          <a href="#slide1" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+    </div>
 
-    </main>
-    <footer>
+  </header>
+  <main class="md:container md:mx-auto">
 
-    </footer>
+  </main>
+  <footer>
+
+  </footer>
 </body>
 
 </html>
